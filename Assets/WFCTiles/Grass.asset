@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 011b48cb0411c3e49ae5b574365a1061, type: 3}
   m_Name: Grass
   m_EditorClassIdentifier: 
+  Type: 0
   tile: {fileID: 11400000, guid: a35a153f52e5e3d488653d66d8ebe627, type: 2}
-  weight: 7
+  weight: 50
   topTiles:
   - {fileID: 11400000, guid: eb8ae4bb8529afe4fabf6c070c33d691, type: 2}
   - {fileID: 11400000}

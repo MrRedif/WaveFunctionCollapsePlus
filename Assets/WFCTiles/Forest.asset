@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 011b48cb0411c3e49ae5b574365a1061, type: 3}
   m_Name: Forest
   m_EditorClassIdentifier: 
+  Type: 0
   tile: {fileID: 11400000, guid: d55c3541f9873564fbce7fc0ea65ba7b, type: 2}
   weight: 1
   topTiles:

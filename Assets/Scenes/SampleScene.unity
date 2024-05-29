@@ -410,6 +410,7 @@ GameObject:
   - component: {fileID: 1034774985}
   - component: {fileID: 1034774984}
   - component: {fileID: 1034774986}
+  - component: {fileID: 1034774987}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -576,7 +577,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 64f5e38a41ddfce48ba4b7471f4f71f5, type: 2}
   - {fileID: 11400000, guid: 5302808345e63eb4e8fcaa5bcbbcf6af, type: 2}
   - {fileID: 11400000, guid: b10fa9224b1d4dc40ab64599c77ecaf7, type: 2}
-  generationSize: {x: 75, y: 42}
+  - {fileID: 11400000, guid: 0c14f726502de7246a8dd7b7961ff62f, type: 2}
+  - {fileID: 11400000, guid: 61fe4d9b61a31534c9c551553072fdd9, type: 2}
+  generationSize: {x: 50, y: 50}
+  partSize: {x: 5, y: 5}
   stepTime: 0.001
   markTile: {fileID: 11400000, guid: be595ae0647989348adb0bc371faeb42, type: 2}
   placeholders:
@@ -588,6 +592,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: af63e871b130bd448b5eca2ff333779e, type: 2}
   - {fileID: 11400000, guid: 2bec32067b646694f8fc7d31f0457956, type: 2}
   - {fileID: 11400000, guid: ac3950eb41142924691bf2c5c8304cc8, type: 2}
+  - {fileID: 11400000, guid: d7324dc0626a6584ca3501ea728ed3b4, type: 2}
+  - {fileID: 11400000, guid: 54867db65e536034e888df05fbf67b80, type: 2}
+  - {fileID: 11400000, guid: 47dd2c14a30d330438c0b60f494151e6, type: 2}
+--- !u!114 &1034774987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034774982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cef4da977fd87944bbc8976de672eb3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImagenLista: {fileID: 0}
 --- !u!1 &1361777849
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +743,7 @@ Tilemap:
     m_Data: {r: 4.0562e-41, g: 4.0562e-41, b: 4.0562e-41, a: 4.0562e-41}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 0.53333336}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -9, y: -5, z: 0}
   m_Size: {x: 25, y: 12, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -758,12 +778,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   generator: {fileID: 1034774986}
-  scale: 1.14
+  scale: 1.579
   power: 16
-  seed: 1136875110
-  noiseType: 0
-  isInverted: 1
-  placeHolderTile: {fileID: 11400000, guid: 5b88f4c7a3d26b64194e914a0f88a514, type: 2}
+  seed: 846566274
+  noiseType: 3
+  isInverted: 0
+  placeHolderTile: {fileID: 11400000, guid: d2613f529ff90f74caaad41d2bc364a2, type: 2}
 --- !u!1 &1532360004
 GameObject:
   m_ObjectHideFlags: 0

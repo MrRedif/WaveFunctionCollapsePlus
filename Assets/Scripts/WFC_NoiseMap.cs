@@ -11,7 +11,7 @@ public class WFC_NoiseMap : MonoBehaviour
     [SerializeField][Range(0.01F, 2F)] float scale;
     public float power;
     public int seed = 209323094;
-    public enum NoiseType { Simplex, Circle }
+    public enum NoiseType { Simplex, Circle, Lines, Flat }
     [SerializeField] NoiseType noiseType;
     [SerializeField] bool isInverted;
     float[,] noiseMap;
@@ -63,6 +63,45 @@ public class WFC_NoiseMap : MonoBehaviour
 
 
                 break;
+            case NoiseType.Lines:
+                for (int i = 0; i < generator.generationSize.x; i++)
+                {
+                    for (int j = 0; j < generator.generationSize.y; j++)
+                    {
+                        float n = 0f, m = 0f;
+                        if (j % 20 < 10)
+                        {
+                            n += (j % 20) / 9f;
+                        }
+                        else
+                        {
+                            n += (19 - (j % 20)) / 9f;
+                        }
+
+
+                        if (i % 20 < 10)
+                        {
+                            m += (i % 20) / 9f;
+                        }
+                        else
+                        {
+                            m += (19 - (i % 20)) / 9f;
+                        }
+
+
+                        noiseMap[i, j] = n / 2f + m / 2f + float.Epsilon;
+                    }
+                }
+                break;
+            case NoiseType.Flat:
+                for (int i = 0; i < generator.generationSize.x; i++)
+                {
+                    for (int j = 0; j < generator.generationSize.y; j++)
+                    {
+                        noiseMap[i, j] = 0.5f;
+                    }
+                }
+                break;
             default:
                 break;
         }
@@ -83,11 +122,11 @@ public class WFC_NoiseMap : MonoBehaviour
         }
     }
 
-    public float GetNoisePoint(int x, int y,bool flip = false)
+    public float GetNoisePoint(int x, int y, bool flip = false)
     {
         if (noiseMap == null) return -1f;
 
-        return (isInverted ^ flip ? 1f - noiseMap[x, y] : noiseMap[x, y]) * power;
+        return (isInverted ^ flip ? 1f - noiseMap[x, y] + 0.00001f : noiseMap[x, y]) * power;
     }
 
     // Update is called once per frame

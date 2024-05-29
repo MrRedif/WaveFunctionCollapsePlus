@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 011b48cb0411c3e49ae5b574365a1061, type: 3}
   m_Name: Water
   m_EditorClassIdentifier: 
+  Type: 0
   tile: {fileID: 11400000, guid: 70333c5de3c8e3f45ae44eb6f1b7abb4, type: 2}
-  weight: 5
+  weight: 600
   topTiles:
   - {fileID: 11400000, guid: f082bf7f032b62042b4c4d1703d46543, type: 2}
   - {fileID: 11400000}

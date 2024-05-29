@@ -14,22 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   tile: {fileID: 11400000, guid: a492efdfc9de02c4f82d84fdcf10f4d6, type: 2}
-  weight: 15
+  weight: 25
   topTiles:
   - {fileID: 11400000, guid: 7923c1bfc3c47584db50846d544da8d6, type: 2}
   - {fileID: 11400000}
   - {fileID: 11400000, guid: 08653e8c72c415242b4a71330817c50c, type: 2}
   - {fileID: 11400000, guid: 64f5e38a41ddfce48ba4b7471f4f71f5, type: 2}
+  - {fileID: 11400000, guid: 61fe4d9b61a31534c9c551553072fdd9, type: 2}
   bottomTiles:
   - {fileID: 11400000, guid: 7923c1bfc3c47584db50846d544da8d6, type: 2}
   - {fileID: 11400000}
   - {fileID: 11400000, guid: 5302808345e63eb4e8fcaa5bcbbcf6af, type: 2}
   - {fileID: 11400000, guid: b10fa9224b1d4dc40ab64599c77ecaf7, type: 2}
+  - {fileID: 11400000, guid: 61fe4d9b61a31534c9c551553072fdd9, type: 2}
   leftTiles:
   - {fileID: 11400000}
   - {fileID: 11400000, guid: 5302808345e63eb4e8fcaa5bcbbcf6af, type: 2}
   - {fileID: 11400000, guid: 08653e8c72c415242b4a71330817c50c, type: 2}
+  - {fileID: 11400000, guid: 0c14f726502de7246a8dd7b7961ff62f, type: 2}
   rightTiles:
   - {fileID: 11400000}
   - {fileID: 11400000, guid: b10fa9224b1d4dc40ab64599c77ecaf7, type: 2}
   - {fileID: 11400000, guid: 64f5e38a41ddfce48ba4b7471f4f71f5, type: 2}
+  - {fileID: 11400000, guid: 0c14f726502de7246a8dd7b7961ff62f, type: 2}
